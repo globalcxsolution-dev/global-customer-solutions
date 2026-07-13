@@ -1,499 +1,155 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Global Customer Solutions | Call Center en México, BPO y Tecnología</title>
-  <meta name="description" content="Global Customer Solutions ofrece servicios de call center en México, contact center, BPO, call center con IA, inteligencia artificial para call centers, CRM, automatización, lead generation, customer service, bilingual support, nearshore call center Mexico y soluciones tecnológicas para empresas en México y Estados Unidos." />
-  <meta name="keywords" content="call center en México, call centers en México, call center Mexico, contact center en México, contact center Mexico, nearshore call center Mexico, bilingual call center Mexico, call center con IA en México, IA para call center, inteligencia artificial para call centers, AI call center Mexico, AI customer service Mexico, BPO Mexico, BPO en México, servicios de atención al cliente, customer service outsourcing Mexico, ventas telefónicas, generación de leads, lead generation Mexico, back office Mexico, CRM Mexico, CRM para empresas, automatización de procesos, business process automation, voicebots Mexico, chatbots Mexico" />
-  <meta property="og:title" content="Global Customer Solutions | Call Center en México, BPO y Tecnología" />
-  <meta property="og:description" content="Soluciones integrales de call center, BPO, CRM, automatización e inteligencia artificial para empresas en México y Estados Unidos." />
-  <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#0D1B2A" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --navy:#0D1B2A;
-      --blue:#1E3A8A;
-      --teal:#00BFA6;
-      --purple:#7B4DFF;
-      --light:#E6E9EF;
-      --white:#FFFFFF;
-      --ink:#111827;
-      --muted:#64748B;
-      --card:#F8FAFC;
-      --line:#DDE3EA;
-      --shadow: 0 24px 70px rgba(13,27,42,.16);
-      --radius: 28px;
-    }
+<!DOCTYPE html><html lang="es"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Global Customer Solutions | Call Center en México, BPO y Tecnología</title><meta name="description" content="Servicios de call center en México, BPO, IA, CRM y automatización.">
+<link rel="icon" href="favicon.png"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css"></head><body><header class="topbar">
+  <div class="container nav">
+    <a href="index.html" class="brand" aria-label="Global Customer Solutions">
+      <img class="brand-symbol" src="assets/images/logo-symbol.png" alt="">
+      <div class="brand-wordmark">
+        <span class="brand-global">GLOBAL</span>
+        <span class="brand-customer">CUSTOMER</span>
+        <span class="brand-solutions">SOLUTIONS</span>
+      </div>
+    </a>
+    <nav class="links">
+      <a href="index.html" data-lang="es">Inicio</a><a href="index.html" data-lang="en">Home</a>
+      <a href="services.html" data-lang="es">Servicios</a><a href="services.html" data-lang="en">Services</a>
+      <a href="about.html" data-lang="es">Nosotros</a><a href="about.html" data-lang="en">About</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="nav-contact" href="contact.html"><span data-lang="es">Contacto</span><span data-lang="en">Contact</span></a>
+      <div class="lang"><button id="esBtn" type="button" class="active" aria-pressed="true">ES</button><button id="enBtn" type="button" aria-pressed="false">EN</button></div>
+    </div>
+  </div>
+</header>
 
-    *{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{
-      font-family:'Poppins',system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-      color:var(--ink);
-      background:var(--white);
-      line-height:1.6;
-    }
-    a{color:inherit;text-decoration:none}
-    img{max-width:100%;display:block}
-    .container{width:min(1180px,92%);margin:0 auto}
+<main>
+<section class="seo-only">
+  <h2>Call center en México, BPO, IA para call centers y nearshore call center Mexico</h2>
+</section>
 
-    .topbar{
-      position:sticky;top:0;z-index:50;
-      background:rgba(255,255,255,.88);
-      backdrop-filter: blur(18px);
-      border-bottom:1px solid rgba(221,227,234,.7);
-    }
-    .nav{height:90px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-    .brand{display:flex;align-items:center;gap:16px;color:var(--navy);min-width:335px}
-    .brand-symbol{width:88px;height:auto;display:block;object-fit:contain;flex:0 0 88px}
-    .brand-wordmark{display:flex;flex-direction:column;line-height:1}
-    .brand-wordmark span{display:block;letter-spacing:.22em;font-weight:700}
-    .brand-global,.brand-customer{font-size:17px;color:var(--navy)}
-    .brand-customer{margin-top:6px}
-    .brand-solutions{font-size:14px;margin-top:8px;background:linear-gradient(90deg,var(--teal),var(--blue),var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:.34em}
-    .links{display:flex;align-items:center;gap:28px;font-size:14px;font-weight:600;color:#334155}
-    .links a:hover{color:var(--teal)}
-    .lang{
-      display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px;
-    }
-    .lang button{border:0;background:transparent;border-radius:999px;padding:7px 11px;cursor:pointer;font-weight:700;color:var(--muted)}
-    .lang button.active{background:var(--navy);color:#fff}
-    .cta{
-      display:inline-flex;align-items:center;justify-content:center;gap:10px;
-      background:linear-gradient(135deg,var(--teal),var(--purple));
-      color:#fff;font-weight:700;border-radius:999px;padding:13px 20px;
-      box-shadow:0 14px 30px rgba(0,191,166,.25);
-      border:0;cursor:pointer;
-    }
-    .cta:hover{transform:translateY(-1px)}
-    .mobile-cta{display:none}
-
-    .hero{
-      position:relative;overflow:hidden;background:
-        radial-gradient(circle at 78% 20%, rgba(123,77,255,.25), transparent 28%),
-        radial-gradient(circle at 60% 68%, rgba(0,191,166,.18), transparent 28%),
-        linear-gradient(135deg,#FFFFFF 0%,#F8FAFC 45%,#EEF4FF 100%);
-      padding:88px 0 64px;
-    }
-    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
-    .eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--blue);font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:20px}
-    .eyebrow:before{content:"";width:38px;height:3px;border-radius:99px;background:linear-gradient(90deg,var(--teal),var(--purple))}
-    h1{font-size:clamp(42px,6vw,72px);line-height:1.02;color:var(--navy);letter-spacing:-.045em;margin-bottom:24px}
-    .gradient-text{background:linear-gradient(90deg,var(--teal),var(--blue),var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent}
-    .lead{font-size:clamp(17px,2vw,21px);color:#475569;max-width:680px;margin-bottom:32px}
-    .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:32px}
-    .secondary{
-      display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:999px;padding:13px 20px;font-weight:700;color:var(--navy);background:#fff;
-    }
-    .trust{display:flex;gap:18px;flex-wrap:wrap;color:#475569;font-size:14px;font-weight:600}
-    .trust span{display:flex;align-items:center;gap:8px}.dot{width:8px;height:8px;background:var(--teal);border-radius:50%;display:inline-block}
-
-    .hero-card{
-      background:var(--navy);border-radius:34px;padding:34px;min-height:510px;color:#fff;position:relative;overflow:hidden;box-shadow:var(--shadow);
-    }
-    .hero-card:before{
-      content:"";position:absolute;inset:-1px;background:
-      radial-gradient(circle at 72% 16%, rgba(123,77,255,.75), transparent 14%),
-      radial-gradient(circle at 20% 74%, rgba(0,191,166,.55), transparent 18%);
-      opacity:.78;
-    }
-    .orbit{position:absolute;right:-80px;top:50px;width:420px;height:420px;border-radius:50%;border:1px solid rgba(255,255,255,.16)}
-    .orbit:before,.orbit:after{content:"";position:absolute;border-radius:50%;border:1px solid rgba(0,191,166,.32)}
-    .orbit:before{inset:44px;transform:rotate(24deg)}.orbit:after{inset:92px;transform:rotate(-28deg);border-color:rgba(123,77,255,.35)}
-    .node{position:absolute;width:14px;height:14px;border-radius:50%;background:var(--teal);box-shadow:0 0 30px var(--teal)}
-    .n1{right:256px;top:126px}.n2{right:76px;top:244px;background:var(--purple);box-shadow:0 0 30px var(--purple)}.n3{right:228px;top:348px}
-    .hero-card-content{position:relative;z-index:2;display:flex;flex-direction:column;height:100%;justify-content:space-between;gap:90px}
-    .big-mark{font-size:120px;font-weight:800;line-height:1;letter-spacing:-.1em;color:rgba(255,255,255,.08)}
-    .card-title{font-size:32px;line-height:1.14;font-weight:800;max-width:420px;margin-bottom:18px}
-    .card-list{display:flex;flex-wrap:wrap;gap:10px}
-    .pill{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);border-radius:999px;padding:9px 12px;font-size:13px;color:#EAF2FF}
-
-
-
-    .btn-icon{
-      width:18px;
-      height:18px;
-      display:inline-block;
-      object-fit:contain;
-      flex:0 0 18px;
-    }
-    .contact-line{
-      display:flex;
-      align-items:center;
-      gap:10px;
-      color:#C8D3E0;
-      font-size:17px;
-      font-weight:600;
-      margin:10px 0 22px;
-    }
-    .contact-line img{
-      width:22px;
-      height:22px;
-      object-fit:contain;
-    }
-
-    .seo-only{
-      position:absolute;
-      left:-10000px;
-      top:auto;
-      width:1px;
-      height:1px;
-      overflow:hidden;
-      white-space:normal;
-    }
-    
-    section{padding:92px 0}.section-head{max-width:780px;margin-bottom:44px}.kicker{color:var(--teal);font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.16em;margin-bottom:10px}.section-head h2{font-size:clamp(32px,4vw,50px);line-height:1.08;letter-spacing:-.035em;color:var(--navy);margin-bottom:16px}.section-head p{color:#64748B;font-size:18px}
-    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
-    .service-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:0 18px 50px rgba(15,23,42,.06);transition:.2s}.service-card:hover{transform:translateY(-4px);box-shadow:0 24px 55px rgba(15,23,42,.11)}
-    .icon{width:54px;height:54px;border-radius:18px;background:linear-gradient(135deg,rgba(0,191,166,.16),rgba(123,77,255,.16));display:grid;place-items:center;margin-bottom:18px;color:var(--navy);font-weight:900;font-size:23px}
-    .service-card h3{font-size:21px;color:var(--navy);margin-bottom:10px}.service-card p{color:#64748B;font-size:15px}.service-card ul{margin-top:14px;padding-left:18px;color:#475569;font-size:14px}.service-card li{margin:6px 0}
-
-    .dark{background:var(--navy);color:#fff;position:relative;overflow:hidden}.dark:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%, rgba(123,77,255,.22), transparent 30%), radial-gradient(circle at 12% 80%, rgba(0,191,166,.16), transparent 30%)}.dark .container{position:relative;z-index:2}.dark h2{color:#fff}.dark p{color:#C8D3E0}.process{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.step{border:1px solid rgba(255,255,255,.14);border-radius:24px;padding:24px;background:rgba(255,255,255,.05)}.step-num{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--teal),var(--purple));display:grid;place-items:center;font-weight:800;margin-bottom:16px}.step h3{margin-bottom:8px;font-size:18px}.step p{font-size:14px;color:#C8D3E0}
-
-    .seo-band{display:none}.keyword-cloud{display:flex;flex-wrap:wrap;gap:12px}.keyword-cloud span{background:#fff;border:1px solid var(--line);padding:10px 14px;border-radius:999px;font-weight:600;color:#475569;font-size:14px}
-
-    .contact{padding:92px 0;background:linear-gradient(135deg,var(--navy),#09111f);color:#fff}.contact-grid{display:grid;grid-template-columns:1fr .9fr;gap:44px;align-items:center}.contact h2{font-size:clamp(32px,4vw,54px);line-height:1.05;margin-bottom:18px}.contact p{color:#C8D3E0;font-size:18px;margin-bottom:26px}.contact-card{background:#fff;color:var(--ink);border-radius:30px;padding:30px;box-shadow:var(--shadow)}.field{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}.field label{font-size:13px;font-weight:700;color:#334155}.field input,.field textarea{width:100%;border:1px solid var(--line);border-radius:16px;padding:14px 15px;font-family:inherit;font-size:15px}.field textarea{min-height:130px;resize:vertical}.form-note{font-size:12px;color:#64748B;margin-top:12px}
-    .whatsapp-float{position:fixed;right:22px;bottom:22px;z-index:80;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#25D366;color:#fff;font-weight:900;font-size:28px;box-shadow:0 18px 40px rgba(37,211,102,.35);border:3px solid #fff}
-    .contact-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
-    footer{background:#060B12;color:#C8D3E0;padding:30px 0}.footer-content{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;font-size:14px}.footer-content strong{color:#fff}
-    [data-lang="en"]{display:none}body.english [data-lang="es"]{display:none}body.english [data-lang="en"]{display:block}body.english span[data-lang="en"],body.english a[data-lang="en"],body.english button[data-lang="en"]{display:inline-flex}span[data-lang="en"],a[data-lang="en"]{display:none}
-
-    @media (max-width:980px){.links{display:none}.mobile-cta{display:inline-flex}.hero-grid,.grid-3,.grid-2,.process,.contact-grid{grid-template-columns:1fr}.hero{padding-top:58px}.hero-card{min-height:420px}.nav{height:68px}section{padding:70px 0}}
-    @media (max-width:560px){.brand{min-width:190px}.brand-logo{width:190px}.hero-actions{flex-direction:column}.cta,.secondary{width:100%}.hero-card{padding:24px;border-radius:26px}.card-title{font-size:26px}.trust{flex-direction:column;gap:9px}.service-card{padding:22px}.footer-content{flex-direction:column}}
-  </style>
-</head>
-<body>
-  <header class="topbar">
-    <div class="container nav">
-      <a href="#inicio" class="brand" aria-label="Global Customer Solutions">
-        <img class="brand-symbol" src="data:image/png;base64,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" alt="" />
-        <div class="brand-wordmark" aria-hidden="true">
-          <span class="brand-global">GLOBAL</span>
-          <span class="brand-customer">CUSTOMER</span>
-          <span class="brand-solutions">SOLUTIONS</span>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow" data-lang="es">Call Center · BPO · Tecnología</div>
+      <div class="eyebrow" data-lang="en">Call Center · BPO · Technology</div>
+      <h1 data-lang="es">Soluciones integrales para conectar <span class="gradient-text">personas, tecnología y resultados.</span></h1>
+      <h1 data-lang="en">Integrated solutions connecting <span class="gradient-text">people, technology and results.</span></h1>
+      <p class="lead" data-lang="es">Ayudamos a empresas en México y Estados Unidos a mejorar atención al cliente, ventas, generación de leads, back office y procesos comerciales mediante call center, BPO, CRM, automatización e inteligencia artificial.</p>
+      <p class="lead" data-lang="en">We help companies in Mexico and the United States improve customer service, sales, lead generation, back office and business processes through call center, BPO, CRM, automation and artificial intelligence solutions.</p>
+      <div class="hero-actions">
+        <a class="cta" href="contact.html" data-lang="es">Solicitar información</a>
+        <a class="cta" href="contact.html" data-lang="en">Request information</a>
+        <a class="secondary" href="services.html" data-lang="es">Ver servicios</a>
+        <a class="secondary" href="services.html" data-lang="en">View services</a>
+      </div>
+      <div class="trust" data-lang="es"><span><i class="dot"></i>Operaciones en México</span><span><i class="dot"></i>Mercado nacional y americano</span><span><i class="dot"></i>Soluciones escalables</span></div>
+      <div class="trust" data-lang="en"><span><i class="dot"></i>Operations in Mexico</span><span><i class="dot"></i>Mexico and U.S. markets</span><span><i class="dot"></i>Scalable solutions</span></div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-content">
+        <div class="big-mark">CX</div>
+        <div>
+          <h2 class="card-title" data-lang="es">Call center, BPO y tecnología para empresas que buscan crecer.</h2>
+          <h2 class="card-title" data-lang="en">Call center, BPO and technology for companies ready to grow.</h2>
+          <div class="card-list"><span class="pill">Customer Care</span><span class="pill">Lead Generation</span><span class="pill">Back Office</span><span class="pill">CRM</span><span class="pill">AI Automation</span><span class="pill">Bilingual Support</span></div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker" data-lang="es">Servicios principales</div><div class="kicker" data-lang="en">Core services</div>
+      <h2 data-lang="es">Todo lo que tu operación necesita en un solo lugar.</h2>
+      <h2 data-lang="en">Everything your operation needs in one place.</h2>
+      <p data-lang="es">Diseñamos soluciones a la medida para empresas que buscan atender mejor, vender más y operar con mayor control.</p>
+      <p data-lang="en">We design custom solutions for companies looking to serve better, sell more and operate with greater control.</p>
+    </div>
+    <div class="grid-3">
+      <div class="service-card"><div class="icon">☎</div><h3>Call Center & Contact Center</h3><p data-lang="es">Atención inbound y outbound, soporte, retención, encuestas, cobranza preventiva y campañas bilingües diseñadas para representar profesionalmente a cada marca.</p><p data-lang="en">Inbound and outbound service, support, retention, surveys, early collections and bilingual campaigns designed to professionally represent each brand.</p></div>
+      <div class="service-card"><div class="icon">↗</div><h3>Lead Generation & Sales</h3><p data-lang="es">Prospección B2B y B2C, calificación de leads, seguimiento comercial, appointment setting y recuperación de oportunidades para fortalecer el pipeline de ventas.</p><p data-lang="en">B2B and B2C prospecting, lead qualification, sales follow-up, appointment setting and opportunity recovery to strengthen the sales pipeline.</p></div>
+      <div class="service-card"><div class="icon">◎</div><h3>BPO & Back Office</h3><p data-lang="es">Captura y validación de información, revisión documental, procesamiento de solicitudes, control administrativo y reporteo operativo de alto volumen.</p><p data-lang="en">Data entry and validation, document review, request processing, administrative control and high-volume operational reporting.</p></div>
+      <div class="service-card"><div class="icon">CRM</div><h3>CRM & Automation</h3><p data-lang="es">Implementación de CRM, dashboards ejecutivos, automatización de flujos, trazabilidad comercial e integración de procesos y APIs.</p><p data-lang="en">CRM implementation, executive dashboards, workflow automation, sales traceability and process and API integration.</p></div>
+      <div class="service-card"><div class="icon">AI</div><h3>Artificial Intelligence</h3><p data-lang="es">Bots, voicebots, asistentes virtuales, análisis de conversaciones y automatización aplicada a atención, ventas y seguimiento de leads.</p><p data-lang="en">Bots, voicebots, virtual assistants, conversation analytics and automation for customer service, sales and lead follow-up.</p></div>
+      <div class="service-card"><div class="icon">▣</div><h3>Technology Solutions</h3><p data-lang="es">Telefonía IP, infraestructura para contact center, nube, redes, seguridad informática, soporte administrado y desarrollo de soluciones a la medida.</p><p data-lang="en">IP telephony, contact center infrastructure, cloud, networking, cybersecurity, managed support and custom solution development.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker" data-lang="es">Modelo de trabajo</div><div class="kicker" data-lang="en">Work model</div>
+      <h2 data-lang="es">De la necesidad a la operación.</h2><h2 data-lang="en">From business need to operation.</h2>
+      <p data-lang="es">Acompañamos cada proyecto con una visión práctica: entender, diseñar, implementar y mejorar.</p>
+      <p data-lang="en">We support every project with a practical approach: understand, design, implement and improve.</p>
+    </div>
+    <div class="process">
+      <div class="step"><div class="step-num">1</div><h3 data-lang="es">Diagnóstico</h3><h3 data-lang="en">Assessment</h3><p data-lang="es">Entendemos la operación, objetivos, canales y volumen.</p><p data-lang="en">We understand the operation, goals, channels and volume.</p></div>
+      <div class="step"><div class="step-num">2</div><h3 data-lang="es">Diseño</h3><h3 data-lang="en">Design</h3><p data-lang="es">Definimos procesos, tecnología e indicadores.</p><p data-lang="en">We define processes, technology and KPIs.</p></div>
+      <div class="step"><div class="step-num">3</div><h3 data-lang="es">Implementación</h3><h3 data-lang="en">Implementation</h3><p data-lang="es">Estructuramos el arranque con seguimiento y control.</p><p data-lang="en">We structure the launch with follow-up and control.</p></div>
+      <div class="step"><div class="step-num">4</div><h3 data-lang="es">Optimización</h3><h3 data-lang="en">Optimization</h3><p data-lang="es">Medimos resultados y mejoramos continuamente.</p><p data-lang="en">We measure results and continuously improve.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-strip">
+  <div class="container contact-strip-grid">
+    <a class="contact-chip" href="tel:+526621862441">
+      <img src="assets/images/phone-contact.svg" alt="">
+      <div><strong data-lang="es">Teléfono</strong><strong data-lang="en">Phone</strong><span>+52 662 186 2441</span></div>
+    </a>
+    <a class="contact-chip" href="https://wa.me/526621862441" target="_blank" rel="noopener">
+      <img src="assets/images/whatsapp-contact.svg" alt="">
+      <div><strong>WhatsApp</strong><span data-lang="es">Mensaje directo</span><span data-lang="en">Direct message</span></div>
+    </a>
+    <a class="contact-chip" href="mailto:contact@globalcxsolution.com">
+      <img src="assets/images/email-contact.svg" alt="">
+      <div><strong data-lang="es">Correo electrónico</strong><strong data-lang="en">Email</strong><span>contact@globalcxsolution.com</span></div>
+    </a>
+    <a class="contact-chip contact-chip-web" href="https://globalcxsolution.com" target="_blank" rel="noopener">
+      <img src="assets/images/globe-contact.svg" alt="">
+      <div><strong data-lang="es">Página web</strong><strong data-lang="en">Website</strong><span>globalcxsolution.com</span></div>
+    </a>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand-block">
+      <a href="index.html" class="footer-brand" aria-label="Global Customer Solutions">
+        <img src="assets/images/logo-symbol.png" alt="">
+        <div><strong>Global Customer Solutions</strong><span>Integrated Solutions. Where Customer Experience Meets Technology.</span></div>
       </a>
-      <nav class="links" aria-label="Principal">
-        <a href="#servicios" data-lang="es">Servicios</a><a href="#services" data-lang="en">Services</a>
-        <a href="#modelo" data-lang="es">Modelo</a><a href="#model" data-lang="en">Model</a>
-        <a href="#sectores" data-lang="es">Sectores</a><a href="#industries" data-lang="en">Industries</a>
-        <a href="#contacto" data-lang="es">Contacto</a><a href="#contact" data-lang="en">Contact</a>
-      </nav>
-      <div style="display:flex;align-items:center;gap:12px">
-        <div class="lang" aria-label="Cambiar idioma">
-          <button type="button" class="active" id="esBtn" aria-pressed="true">ES</button>
-          <button type="button" id="enBtn" aria-pressed="false">EN</button>
-        </div>
-        <a class="cta mobile-cta" href="https://wa.me/526621862441?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20Global%20Customer%20Solutions" target="_blank" rel="noopener"><img class="btn-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAADT0lEQVR4nO2dTVLcMBBG26lcBVbDtcKZhmuF1XAYs4lSU0a2uqX+lfptAdv6nlqSPWIMkCRJkiRJkiTJamzWF4Dl5e+fnfo3X28f7tvn9gJ7Am/hUYirC5II/QwvMswvQjP0MyxlmJ3YQ/BHLESon9Bj8Ec0RfzSOhFAjPABdK9TxXSU4GtIV4N4BUQOH0D++kUFRA+/INkOkfKaJfga3EMSewXMHD4Af/tYBcwefoGznWwCVgm/wNVe1fuA5CcsAlbr/QWOdg8LWDX8wmj7hwSsHn5hJIecA4zpFsDZ+x+3O9ehzOjNo0uARPirSjAdgo6hP273KURQIAvg6v1XQUeWQM3HpAIwAUeWQIEkgKP3U4KNKoGSk2oF9AQaVQIWNQEjQc4sAS3A+q43mgRsXqHuhKNJwBBKAMB8ElACNIef18/3oZ97ApObywo4CzlS+FjUBFDDO/7+jOEDOK2AQgl91vABEAKsl5/Rw2/l564CZlvltHAnYDVUBUQfTiTICjAmBRjjUsBKE7FLASuhLgA7Ea9SBa4rYAUJrgWsgImA18/3HIr+YVYBK+yOwNAUIPV/stS7Yk4JmkJb+ZnOARYSvO1FNZ+ENSXU9qJaYy6gB84NXtYbglECpL8vQfopqdVeVExubipAcijyvOR1IwBAXgLm+NoSSEOL1ufDPSFQ5GGPPzI0YodtVxVQ6Gl4mUyj3S+4FAAw1vuuZEjMHSOQVzea21Q8rNN7JFBWjW4rAMD+Q3yN85MFaH+1o5WE3vNS83FdAQVtCZrn6+7NVlsWpecFjaXnM0PDifW+UW4Z2uEDCA9BGr2V8ula61gWDE+oV1VwFKDVSKr40esaWZgMV8DZyS3X8JjK4Prfg9FVIduS8lgJVr3/isftznodHEtykTnAwx1sDQ+d4AibgKve4LHho3DdkLJWwNfbx7bC90FwPg34zXWgM656f7TgAfgfxYgLqHH2mNjzUCX1DIxVwL7vl3fGEXs8gOwDSNEKKD26FfyKPb/AdvBW76+xcvAFkznAc/AAup95sJwI2/u3bft/PusnqTXCvkesJeA5+CMeRIR/k96ZgKvga+S7JAd4lkANvka+TZXIvu87R/BnzPo+4SRJkiRJkiQx4BuZspTJw48UzwAAAABJRU5ErkJggg==" alt="">WhatsApp</a>
-      </div>
+      <p data-lang="es">Soluciones integrales de call center, BPO, inteligencia artificial y tecnología para empresas en México y Estados Unidos.</p>
+      <p data-lang="en">Integrated call center, BPO, artificial intelligence and technology solutions for companies in Mexico and the United States.</p>
     </div>
-  </header>
-
-  <main>
-
-    <section class="seo-only" aria-label="SEO keywords">
-      <h2>Call center en México, BPO e inteligencia artificial para empresas</h2>
-      <p>
-        Global Customer Solutions ofrece servicios de call center en México, call centers en México, contact center en México, BPO en México,
-        call center con IA en México, inteligencia artificial para call centers, IA para atención al cliente, voicebots, chatbots,
-        CRM para empresas, automatización de procesos, generación de leads, ventas telefónicas, back office, customer service,
-        soporte bilingüe español inglés y soluciones tecnológicas para empresas en México y Estados Unidos.
-      </p>
-      <h2>Call center in Mexico, AI call center and nearshore BPO solutions</h2>
-      <p>
-        Global Customer Solutions provides call center in Mexico, nearshore call center Mexico, bilingual call center Mexico,
-        BPO Mexico, AI call center Mexico, AI customer service, customer support outsourcing, lead generation, sales support,
-        back office, CRM implementation, process automation, voicebots, chatbots and technology solutions for companies serving
-        Mexico and the United States.
-      </p>
-    </section>
-
-    <section class="hero" id="inicio">
-      <div class="container hero-grid">
-        <div>
-          <div class="eyebrow" data-lang="es">Call Center · BPO · Tecnología</div>
-          <div class="eyebrow" data-lang="en">Call Center · BPO · Technology</div>
-          <h1 data-lang="es">Soluciones integrales para conectar <span class="gradient-text">personas, tecnología y resultados.</span></h1>
-          <h1 data-lang="en">Integrated solutions connecting <span class="gradient-text">people, technology and results.</span></h1>
-          <p class="lead" data-lang="es">Global Customer Solutions ayuda a empresas en México y Estados Unidos a mejorar su atención al cliente, ventas, generación de leads, back office y procesos comerciales mediante call center, contact center, CRM, automatización e inteligencia artificial.</p>
-          <p class="lead" data-lang="en">Global Customer Solutions helps companies in Mexico and the United States improve customer service, sales, lead generation, back office and business processes through call center, contact center, CRM, automation and artificial intelligence solutions.</p>
-          <div class="hero-actions">
-            <a class="cta" href="mailto:globalcx.solution@gmail.com?subject=Solicitud%20de%20informaci%C3%B3n%20-%20Global%20Customer%20Solutions" data-lang="es">Solicitar información</a>
-            <a class="cta" href="mailto:globalcx.solution@gmail.com?subject=Information%20request%20-%20Global%20Customer%20Solutions" data-lang="en">Request information</a>
-            <a class="secondary" href="https://wa.me/526621862441?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20Global%20Customer%20Solutions" target="_blank" rel="noopener"><img class="btn-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAADT0lEQVR4nO2dTVLcMBBG26lcBVbDtcKZhmuF1XAYs4lSU0a2uqX+lfptAdv6nlqSPWIMkCRJkiRJkiTJamzWF4Dl5e+fnfo3X28f7tvn9gJ7Am/hUYirC5II/QwvMswvQjP0MyxlmJ3YQ/BHLESon9Bj8Ec0RfzSOhFAjPABdK9TxXSU4GtIV4N4BUQOH0D++kUFRA+/INkOkfKaJfga3EMSewXMHD4Af/tYBcwefoGznWwCVgm/wNVe1fuA5CcsAlbr/QWOdg8LWDX8wmj7hwSsHn5hJIecA4zpFsDZ+x+3O9ehzOjNo0uARPirSjAdgo6hP273KURQIAvg6v1XQUeWQM3HpAIwAUeWQIEkgKP3U4KNKoGSk2oF9AQaVQIWNQEjQc4sAS3A+q43mgRsXqHuhKNJwBBKAMB8ElACNIef18/3oZ97ApObywo4CzlS+FjUBFDDO/7+jOEDOK2AQgl91vABEAKsl5/Rw2/l564CZlvltHAnYDVUBUQfTiTICjAmBRjjUsBKE7FLASuhLgA7Ea9SBa4rYAUJrgWsgImA18/3HIr+YVYBK+yOwNAUIPV/stS7Yk4JmkJb+ZnOARYSvO1FNZ+ENSXU9qJaYy6gB84NXtYbglECpL8vQfopqdVeVExubipAcijyvOR1IwBAXgLm+NoSSEOL1ufDPSFQ5GGPPzI0YodtVxVQ6Gl4mUyj3S+4FAAw1vuuZEjMHSOQVzea21Q8rNN7JFBWjW4rAMD+Q3yN85MFaH+1o5WE3vNS83FdAQVtCZrn6+7NVlsWpecFjaXnM0PDifW+UW4Z2uEDCA9BGr2V8ula61gWDE+oV1VwFKDVSKr40esaWZgMV8DZyS3X8JjK4Prfg9FVIduS8lgJVr3/isftznodHEtykTnAwx1sDQ+d4AibgKve4LHho3DdkLJWwNfbx7bC90FwPg34zXWgM656f7TgAfgfxYgLqHH2mNjzUCX1DIxVwL7vl3fGEXs8gOwDSNEKKD26FfyKPb/AdvBW76+xcvAFkznAc/AAup95sJwI2/u3bft/PusnqTXCvkesJeA5+CMeRIR/k96ZgKvga+S7JAd4lkANvka+TZXIvu87R/BnzPo+4SRJkiRJkiQx4BuZspTJw48UzwAAAABJRU5ErkJggg==" alt="">WhatsApp</a>
-            <a class="secondary" href="#servicios" data-lang="es">Ver servicios</a>
-            <a class="secondary" href="#services" data-lang="en">View services</a>
-          </div>
-          <div class="trust" data-lang="es">
-            <span><i class="dot"></i>Operaciones en México</span><span><i class="dot"></i>Mercado nacional y americano</span><span><i class="dot"></i>Soluciones escalables</span>
-          </div>
-          <div class="trust" data-lang="en">
-            <span><i class="dot"></i>Operations in Mexico</span><span><i class="dot"></i>U.S. and Mexico markets</span><span><i class="dot"></i>Scalable solutions</span>
-          </div>
-        </div>
-        <div class="hero-card" aria-label="Global Customer Solutions services">
-          <div class="orbit"></div><span class="node n1"></span><span class="node n2"></span><span class="node n3"></span>
-          <div class="hero-card-content">
-            <div class="big-mark">GCS</div>
-            <div>
-              <h2 class="card-title" data-lang="es">Call center, BPO y tecnología para empresas que buscan crecer.</h2>
-              <h2 class="card-title" data-lang="en">Call center, BPO and technology for companies ready to grow.</h2>
-              <div class="card-list">
-                <span class="pill">Customer Care</span><span class="pill">Lead Generation</span><span class="pill">Back Office</span><span class="pill">CRM</span><span class="pill">AI Automation</span><span class="pill">Bilingual Support</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="servicios">
-      <div class="container">
-        <div class="section-head">
-          <div class="kicker" data-lang="es">Servicios</div><div class="kicker" data-lang="en" id="services">Services</div>
-          <h2 data-lang="es">Todo lo que tu operación necesita en un solo lugar.</h2>
-          <h2 data-lang="en">Everything your operation needs in one place.</h2>
-          <p data-lang="es">Diseñamos soluciones a la medida para empresas que buscan atender mejor, vender más y operar con mayor control.</p>
-          <p data-lang="en">We design custom solutions for companies seeking better customer experience, stronger sales and greater operational control.</p>
-        </div>
-        <div class="grid-3">
-          <article class="service-card"><div class="icon">☎</div><h3>Call Center & Contact Center</h3><p data-lang="es">Atención inbound, ventas outbound, soporte, retención, encuestas, cobranza preventiva y campañas bilingües.</p><p data-lang="en">Inbound customer service, outbound sales, support, retention, surveys, early collections and bilingual campaigns.</p><ul data-lang="es"><li>Atención al cliente</li><li>Ventas telefónicas</li><li>Soporte español-inglés</li></ul><ul data-lang="en"><li>Customer service</li><li>Phone sales</li><li>Spanish-English support</li></ul></article>
-          <article class="service-card"><div class="icon">↗</div><h3>Lead Generation & Sales</h3><p data-lang="es">Prospección, calificación de leads, seguimiento comercial y recuperación de oportunidades para acelerar el crecimiento.</p><p data-lang="en">Prospecting, lead qualification, commercial follow-up and opportunity recovery to accelerate growth.</p><ul data-lang="es"><li>Prospección B2B/B2C</li><li>Seguimiento comercial</li><li>Conversión de oportunidades</li></ul><ul data-lang="en"><li>B2B/B2C prospecting</li><li>Sales follow-up</li><li>Opportunity conversion</li></ul></article>
-          <article class="service-card"><div class="icon">◎</div><h3>BPO & Back Office</h3><p data-lang="es">Procesos administrativos, captura de datos, validación de información, revisión documental y gestión operativa.</p><p data-lang="en">Administrative processes, data entry, information validation, document review and operational management.</p><ul data-lang="es"><li>Captura y validación</li><li>Procesos repetitivos</li><li>Reporteo operativo</li></ul><ul data-lang="en"><li>Data entry and validation</li><li>Repetitive processes</li><li>Operational reporting</li></ul></article>
-          <article class="service-card"><div class="icon">CRM</div><h3>CRM & Automation</h3><p data-lang="es">Implementación de CRM, automatización de procesos, flujos de seguimiento, dashboards e conexiones.</p><p data-lang="en">CRM implementation, process automation, follow-up workflows, dashboards and technology connections.</p><ul data-lang="es"><li>CRM a la medida</li><li>Dashboards BI</li><li>Proyecto de APIs</li></ul><ul data-lang="en"><li>Custom CRM</li><li>BI dashboards</li><li>API technology connections</li></ul></article>
-          <article class="service-card"><div class="icon">AI</div><h3>Artificial Intelligence</h3><p data-lang="es">Bots, voicebots, asistentes virtuales, análisis de conversaciones y automatización aplicada a servicio y ventas.</p><p data-lang="en">Bots, voicebots, virtual assistants, conversation analytics and automation for service and sales.</p><ul data-lang="es"><li>Bots de atención</li><li>Voicebots</li><li>Automatización comercial</li></ul><ul data-lang="en"><li>Service bots</li><li>Voicebots</li><li>Sales automation</li></ul></article>
-          <article class="service-card"><div class="icon">▣</div><h3>Technology Solutions</h3><p data-lang="es">Telefonía IP, infraestructura para contact center, soporte administrado, nube, seguridad y desarrollo tecnológico.</p><p data-lang="en">IP telephony, contact center infrastructure, managed support, cloud, security and custom technology development.</p><ul data-lang="es"><li>Telefonía IP</li><li>Infraestructura TI</li><li>Soporte administrado</li></ul><ul data-lang="en"><li>IP telephony</li><li>IT infrastructure</li><li>Managed support</li></ul></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="dark" id="modelo">
-      <div class="container">
-        <div class="section-head">
-          <div class="kicker" data-lang="es">Modelo de trabajo</div><div class="kicker" data-lang="en" id="model">Work model</div>
-          <h2 data-lang="es">De la necesidad a la operación.</h2>
-          <h2 data-lang="en">From business need to operation.</h2>
-          <p data-lang="es">Acompañamos cada proyecto con una visión práctica: entender, diseñar, implementar y mejorar.</p>
-          <p data-lang="en">We support every project with a practical approach: understand, design, implement and improve.</p>
-        </div>
-        <div class="process">
-          <div class="step"><div class="step-num">1</div><h3 data-lang="es">Diagnóstico</h3><h3 data-lang="en">Discovery</h3><p data-lang="es">Conocemos tu operación, canales, volumen, objetivos e indicadores.</p><p data-lang="en">We understand your operation, channels, volume, goals and KPIs.</p></div>
-          <div class="step"><div class="step-num">2</div><h3 data-lang="es">Diseño</h3><h3 data-lang="en">Design</h3><p data-lang="es">Creamos una solución alineada a tu mercado, presupuesto y necesidad.</p><p data-lang="en">We create a solution aligned with your market, budget and requirements.</p></div>
-          <div class="step"><div class="step-num">3</div><h3 data-lang="es">Implementación</h3><h3 data-lang="en">Implementation</h3><p data-lang="es">Estructuramos procesos, capacitación, tecnología y operación.</p><p data-lang="en">We structure processes, training, technology and operations.</p></div>
-          <div class="step"><div class="step-num">4</div><h3 data-lang="es">Optimización</h3><h3 data-lang="en">Optimization</h3><p data-lang="es">Medimos resultados, detectamos oportunidades y mejoramos continuamente.</p><p data-lang="en">We measure results, identify opportunities and continuously improve.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="sectores">
-      <div class="container">
-        <div class="section-head">
-          <div class="kicker" data-lang="es">Sectores</div><div class="kicker" data-lang="en" id="industries">Industries</div>
-          <h2 data-lang="es">Soluciones para empresas de múltiples industrias.</h2>
-          <h2 data-lang="en">Solutions for companies across multiple industries.</h2>
-          <p data-lang="es">Apoyamos operaciones nacionales, nearshore y bilingües para empresas con mercado en México y Estados Unidos.</p>
-          <p data-lang="en">We support national, nearshore and bilingual operations for companies serving Mexico and the United States.</p>
-        </div>
-        <div class="grid-2">
-          <div class="service-card"><h3 data-lang="es">Industrias que atendemos</h3><h3 data-lang="en">Industries we serve</h3><p data-lang="es">Retail · E-commerce · Salud · Educación · Manufactura · Logística · Servicios profesionales · Tecnología · Inmobiliarias · PYMES · Corporativos.</p><p data-lang="en">Retail · E-commerce · Healthcare · Education · Manufacturing · Logistics · Professional services · Technology · Real estate · SMBs · Corporations.</p></div>
-          <div class="service-card"><h3 data-lang="es">Mercados objetivo</h3><h3 data-lang="en">Target markets</h3><p data-lang="es">Empresas que necesitan call centers en México, operaciones bilingües, contact center nearshore, atención a clientes, ventas, soporte o transformación digital.</p><p data-lang="en">Companies looking for call centers in Mexico, bilingual operations, nearshore contact center services, customer support, sales, support or digital transformation.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="seo-band">
-      <div class="container">
-        <div class="section-head">
-          <div class="kicker">SEO</div>
-          <h2 data-lang="es">Palabras clave que nos posicionan.</h2><h2 data-lang="en">Keywords that position the brand.</h2>
-          <p data-lang="es">La página está preparada para búsquedas relevantes de call center, BPO y tecnología.</p><p data-lang="en">The page is prepared for relevant searches around call center, BPO and technology.</p>
-        </div>
-        <div class="keyword-cloud">
-          <span>call center en México</span><span>call centers en México</span><span>contact center Mexico</span><span>nearshore call center Mexico</span><span>bilingual call center Mexico</span><span>BPO Mexico</span><span>customer service Mexico</span><span>lead generation</span><span>back office</span><span>CRM automation</span><span>AI for call centers</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contacto">
-      <div class="container contact-grid">
-        <div>
-          <h2 data-lang="es">Hablemos de tu operación.</h2><h2 data-lang="en" id="contact">Let’s talk about your operation.</h2>
-          <p data-lang="es">Cuéntanos qué necesitas: atención al cliente, ventas, generación de leads, BPO, CRM, automatización, IA o una solución integral de call center.</p>
-          <p data-lang="en">Tell us what you need: customer service, sales, lead generation, BPO, CRM, automation, AI or an integrated call center solution.</p>
-          <div class="contact-actions">
-            <a class="cta" href="https://wa.me/526621862441?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20Global%20Customer%20Solutions" target="_blank" rel="noopener">WhatsApp: 662 186 2441</a>
-            <a class="secondary" href="mailto:globalcx.solution@gmail.com?subject=Nuevo%20prospecto%20-%20Global%20Customer%20Solutions" style="background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.18)">globalcx.solution@gmail.com</a>
-          </div>
-        </div>
-        
-          <form id="leadForm" class="lead-form">
-            <div class="field">
-              <label data-lang="es" for="name">Nombre</label>
-              <label data-lang="en" for="name">Name</label>
-              <input id="name" name="name" type="text" data-placeholder-es="Tu nombre" data-placeholder-en="Your name" placeholder="Tu nombre" required>
-            </div>
-            <div class="field">
-              <label data-lang="es" for="company">Empresa</label>
-              <label data-lang="en" for="company">Company</label>
-              <input id="company" name="company" type="text" data-placeholder-es="Nombre de la empresa" data-placeholder-en="Company name" placeholder="Nombre de la empresa">
-            </div>
-            <div class="field">
-              <label data-lang="es" for="email">Correo</label>
-              <label data-lang="en" for="email">Email</label>
-              <input id="email" name="email" type="email" data-placeholder-es="correo@empresa.com" data-placeholder-en="email@company.com" placeholder="correo@empresa.com">
-            </div>
-            <div class="field">
-              <label data-lang="es" for="phone">Teléfono</label>
-              <label data-lang="en" for="phone">Phone</label>
-              <input id="phone" name="phone" type="tel" data-placeholder-es="Teléfono de contacto" data-placeholder-en="Contact phone" placeholder="Teléfono de contacto">
-            </div>
-            <div class="field">
-              <label data-lang="es" for="service">Servicio de interés</label>
-              <label data-lang="en" for="service">Service of interest</label>
-              <select id="service" name="service" style="width:100%;border:1px solid var(--line);border-radius:16px;padding:14px 15px;font-family:inherit;font-size:15px;background:#fff">
-                <option value="" data-es="Selecciona una opción" data-en="Select an option">Selecciona una opción</option>
-                <option value="Call Center / Contact Center">Call Center / Contact Center</option>
-                <option value="BPO / Back Office">BPO / Back Office</option>
-                <option value="Lead Generation / Sales">Lead Generation / Sales</option>
-                <option value="CRM / Automatización">CRM / Automation</option>
-                <option value="IA para Call Center">AI for Call Center</option>
-                <option value="Soluciones tecnológicas">Technology Solutions</option>
-              </select>
-            </div>
-            <div class="field">
-              <label data-lang="es" for="message">Mensaje</label>
-              <label data-lang="en" for="message">Message</label>
-              <textarea id="message" name="message" data-placeholder-es="Cuéntanos brevemente qué necesitas." data-placeholder-en="Briefly tell us what you need." placeholder="Cuéntanos brevemente qué necesitas."></textarea>
-            </div>
-            <button class="cta" type="submit">
-              <img class="btn-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAADT0lEQVR4nO2dTVLcMBBG26lcBVbDtcKZhmuF1XAYs4lSU0a2uqX+lfptAdv6nlqSPWIMkCRJkiRJkiTJamzWF4Dl5e+fnfo3X28f7tvn9gJ7Am/hUYirC5II/QwvMswvQjP0MyxlmJ3YQ/BHLESon9Bj8Ec0RfzSOhFAjPABdK9TxXSU4GtIV4N4BUQOH0D++kUFRA+/INkOkfKaJfga3EMSewXMHD4Af/tYBcwefoGznWwCVgm/wNVe1fuA5CcsAlbr/QWOdg8LWDX8wmj7hwSsHn5hJIecA4zpFsDZ+x+3O9ehzOjNo0uARPirSjAdgo6hP273KURQIAvg6v1XQUeWQM3HpAIwAUeWQIEkgKP3U4KNKoGSk2oF9AQaVQIWNQEjQc4sAS3A+q43mgRsXqHuhKNJwBBKAMB8ElACNIef18/3oZ97ApObywo4CzlS+FjUBFDDO/7+jOEDOK2AQgl91vABEAKsl5/Rw2/l564CZlvltHAnYDVUBUQfTiTICjAmBRjjUsBKE7FLASuhLgA7Ea9SBa4rYAUJrgWsgImA18/3HIr+YVYBK+yOwNAUIPV/stS7Yk4JmkJb+ZnOARYSvO1FNZ+ENSXU9qJaYy6gB84NXtYbglECpL8vQfopqdVeVExubipAcijyvOR1IwBAXgLm+NoSSEOL1ufDPSFQ5GGPPzI0YodtVxVQ6Gl4mUyj3S+4FAAw1vuuZEjMHSOQVzea21Q8rNN7JFBWjW4rAMD+Q3yN85MFaH+1o5WE3vNS83FdAQVtCZrn6+7NVlsWpecFjaXnM0PDifW+UW4Z2uEDCA9BGr2V8ula61gWDE+oV1VwFKDVSKr40esaWZgMV8DZyS3X8JjK4Prfg9FVIduS8lgJVr3/isftznodHEtykTnAwx1sDQ+d4AibgKve4LHho3DdkLJWwNfbx7bC90FwPg34zXWgM656f7TgAfgfxYgLqHH2mNjzUCX1DIxVwL7vl3fGEXs8gOwDSNEKKD26FfyKPb/AdvBW76+xcvAFkznAc/AAup95sJwI2/u3bft/PusnqTXCvkesJeA5+CMeRIR/k96ZgKvga+S7JAd4lkANvka+TZXIvu87R/BnzPo+4SRJkiRJkiQx4BuZspTJw48UzwAAAABJRU5ErkJggg==" alt="">
-              <span data-lang="es">Enviar por WhatsApp</span>
-              <span data-lang="en">Send via WhatsApp</span>
-            </button>
-            <p class="form-note" data-lang="es">Al enviar, se abrirá WhatsApp con la información de tu solicitud lista para compartir.</p>
-            <p class="form-note" data-lang="en">When submitted, WhatsApp will open with your request information ready to share.</p>
-          </form>
-
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-content">
-      <div data-lang="es"><strong>Global Customer Solutions</strong> · Call Center · BPO · Tecnología · CRM · IA</div><div data-lang="en"><strong>Global Customer Solutions</strong> · Call Center · BPO · Technology · CRM · AI</div>
-      <div>WhatsApp: 662 186 2441 · globalcx.solution@gmail.com</div>
+    <div class="footer-column">
+      <h3 data-lang="es">Navegación</h3><h3 data-lang="en">Navigation</h3>
+      <a href="index.html" data-lang="es">Inicio</a><a href="index.html" data-lang="en">Home</a>
+      <a href="services.html" data-lang="es">Soluciones</a><a href="services.html" data-lang="en">Solutions</a>
+      <a href="about.html" data-lang="es">Nosotros</a><a href="about.html" data-lang="en">About</a>
+      <a href="contact.html" data-lang="es">Contacto</a><a href="contact.html" data-lang="en">Contact</a>
     </div>
-  </footer>
-
-  <a class="whatsapp-float" href="https://wa.me/526621862441?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20Global%20Customer%20Solutions" target="_blank" rel="noopener" aria-label="WhatsApp">☎</a>
-
-  <script>
-    const esBtn = document.getElementById('esBtn');
-    const enBtn = document.getElementById('enBtn');
-    function setLang(lang){
-      document.body.classList.toggle('english', lang === 'en');
-      esBtn.classList.toggle('active', lang === 'es');
-      enBtn.classList.toggle('active', lang === 'en');
-      document.documentElement.lang = lang;
-      localStorage.setItem('gcs-lang', lang);
-    }
-    esBtn.addEventListener('click',()=>setLang('es'));
-    enBtn.addEventListener('click',()=>setLang('en'));
-    setLang(localStorage.getItem('gcs-lang') || 'es');
-  </script>
-
-
-
-
-<script>
-(function(){
-  const esBtn = document.getElementById('esBtn');
-  const enBtn = document.getElementById('enBtn');
-
-  function showLang(lang){
-    document.documentElement.lang = lang;
-
-    document.querySelectorAll('[data-lang]').forEach(el => {
-      const shouldShow = el.getAttribute('data-lang') === lang;
-      el.style.setProperty('display', shouldShow ? '' : 'none', 'important');
-    });
-
-    document.querySelectorAll('[data-placeholder-es]').forEach(el => {
-      el.placeholder = lang === 'es'
-        ? el.getAttribute('data-placeholder-es')
-        : el.getAttribute('data-placeholder-en');
-    });
-
-    document.querySelectorAll('#service option').forEach(opt => {
-      if (opt.dataset.es && opt.dataset.en) {
-        opt.textContent = lang === 'es' ? opt.dataset.es : opt.dataset.en;
-      }
-    });
-
-    if (esBtn && enBtn) {
-      esBtn.classList.toggle('active', lang === 'es');
-      enBtn.classList.toggle('active', lang === 'en');
-      esBtn.setAttribute('aria-pressed', lang === 'es' ? 'true' : 'false');
-      enBtn.setAttribute('aria-pressed', lang === 'en' ? 'true' : 'false');
-    }
-
-    try { localStorage.setItem('gcsLang', lang); } catch(e) {}
-  }
-
-  if (esBtn) {
-    esBtn.addEventListener('click', function(e){
-      e.preventDefault();
-      showLang('es');
-    });
-    esBtn.addEventListener('touchend', function(e){
-      e.preventDefault();
-      showLang('es');
-    }, {passive:false});
-  }
-
-  if (enBtn) {
-    enBtn.addEventListener('click', function(e){
-      e.preventDefault();
-      showLang('en');
-    });
-    enBtn.addEventListener('touchend', function(e){
-      e.preventDefault();
-      showLang('en');
-    }, {passive:false});
-  }
-
-  const form = document.getElementById('leadForm');
-  if (form) {
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-      const lang = document.documentElement.lang === 'en' ? 'en' : 'es';
-      const name = document.getElementById('name')?.value.trim() || '';
-      const company = document.getElementById('company')?.value.trim() || '';
-      const email = document.getElementById('email')?.value.trim() || '';
-      const phone = document.getElementById('phone')?.value.trim() || '';
-      const service = document.getElementById('service')?.value.trim() || '';
-      const message = document.getElementById('message')?.value.trim() || '';
-
-      const plainText = lang === 'en'
-        ? `Hello, I would like information from Global Customer Solutions.\n\nName: ${name}\nCompany: ${company}\nEmail: ${email}\nPhone: ${phone}\nService of interest: ${service}\nMessage: ${message}`
-        : `Hola, quiero información de Global Customer Solutions.\n\nNombre: ${name}\nEmpresa: ${company}\nCorreo: ${email}\nTeléfono: ${phone}\nServicio de interés: ${service}\nMensaje: ${message}`;
-
-      window.open(`https://wa.me/526621862441?text=${encodeURIComponent(plainText)}`, '_blank');
-    });
-  }
-
-  let initialLang = 'es';
-  try {
-    const stored = localStorage.getItem('gcsLang');
-    if (stored === 'en' || stored === 'es') initialLang = stored;
-  } catch(e) {}
-  showLang(initialLang);
-})();
-</script>
-
-</body>
-</html>
+    <div class="footer-column">
+      <h3 data-lang="es">Contacto</h3><h3 data-lang="en">Contact</h3>
+      <a href="tel:+526621862441">+52 662 186 2441</a>
+      <a href="https://wa.me/526621862441" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="mailto:contact@globalcxsolution.com">contact@globalcxsolution.com</a>
+      <a href="https://globalcxsolution.com" target="_blank" rel="noopener">globalcxsolution.com</a>
+    </div>
+    <div class="footer-column">
+      <h3 data-lang="es">Legal</h3><h3 data-lang="en">Legal</h3>
+      <a href="privacy.html" data-lang="es">Aviso de privacidad</a><a href="privacy.html" data-lang="en">Privacy notice</a>
+    </div>
+  </div>
+  <div class="container footer-bottom"><span>© 2026 Global Customer Solutions</span><span data-lang="es">México · Estados Unidos</span><span data-lang="en">Mexico · United States</span></div>
+</footer>
+<script src="assets/js/main.js"></script></body></html>
